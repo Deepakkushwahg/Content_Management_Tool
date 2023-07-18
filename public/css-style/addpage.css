@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#createsection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#createform {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    min-width: 30vw;
+    padding: 15px;
+    min-height: 85%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#label {
+    font-weight: bold;
+    color: blue;
+}
+
+#addbut {
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.275), -1px -5px 5px rgba(0, 0, 0, 0.275);
+    padding: 5px;
+}
+
+#addbut:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+}
+
+#addbut:active {
+    box-shadow: none;
+}

@@ -1,0 +1,66 @@
+#home-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+    min-height: 90.86vh;
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#head {
+    background-color: blue;
+    width: 242px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    color: white;
+}
+
+#home-data-box {
+    box-shadow: 1px 1px blue, -1px -1px green;
+    width: 83.4%;
+    margin: 10px 10px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#home-data-box span {
+    background-color: bisque;
+    padding: 5px;
+}
+
+#home-data-img {
+    width: 220px;
+    height: 200px;
+}
+
+#buttonpart button {
+    background-color: blue;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.275), -1px -5px 5px rgba(0, 0, 0, 0.275);
+    border: none;
+    padding: 5px;
+    width: 100px;
+    color: white;
+}
+
+#home-data-img {
+    border-radius: 5px;
+}
+
+#buttonpart button:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+}
+
+#buttonpart button:active {
+    box-shadow: none;
+}

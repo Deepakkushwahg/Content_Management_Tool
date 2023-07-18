@@ -1,0 +1,68 @@
+<%- include('NavBar') %>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Content Page</title>
+        <link rel="stylesheet" href="/css-style/contentpage.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+
+    <body>
+
+        <br>
+        <div id="content-main">
+
+            <div id="blog-heading">
+                <i class='fas fa-comments'>&#x2709;</i>
+                <span style="padding-left: 10px;"><%= Contentdata.Title %></span>
+            </div>
+
+            <br>
+            <span style="color: blue;font-family:fantasy">SubTitle: </span>
+            <div id="blog-subtitle">
+                <%= Contentdata.Subtitle %>
+            </div>
+            <br>
+
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 50%;">
+                    <span style="color: blue;font-family:fantasy">Description: </span>
+                    <div id="blog-description">
+                        <%= Contentdata.Description %>
+                    </div>
+                </div>
+
+                <div style="width: 50%; display: flex; justify-content: center;">
+                    <div id="content-images1">
+                        <img src="<%= Contentdata.Image[0] %>" alt="">
+                        <img src="<%= Contentdata.Image[1] %>" alt="">
+                    </div>
+                    <div id="content-images2">
+                        <img src="<%= Contentdata.Image[2] %>" alt="">
+                        <img src="<%= Contentdata.Image[3] %>" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div style="padding-top: 10px;">
+                <span style="color: blue;font-family:fantasy;"> Created By:</span>
+                <div id="blog-creator">
+                    <span style="font-weight: bold;color:white">
+                    <%= Contentdata.CreatorName %>
+                </span>
+                    <i class='fas fa-comments' style="color: orange;display:block;float:right;background-color:white;border-radius:10px;padding:1px">&#xa9;</i>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </body>
+
+    </html>
